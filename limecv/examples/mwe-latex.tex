@@ -1,0 +1,200 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% mwe-latex.cls
+% 
+% Copyright 2017 Olivier Pieters
+%
+% This is a MWE of the `limecv' class that showcases its features 
+% and sane packages to load. This MWE assumes that the LaTeX 
+% compiler is used.
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is Olivier Pieters.
+% Contact the maintainer at: me (at) olivierpieters (dot) be. 
+
+\documentclass[a4paper]{limecv}
+  
+  % Defaults used in template design.
+  \usepackage[margin=\cvMargin,noheadfoot]{geometry}
+  \cvSetLanguage{english}
+  
+  % For cover letter.
+  \usepackage{lipsum}
+  \usepackage{comment}
+  \begin{document}
+  
+  % Design of side bar.
+  \begin{cvSidebar}
+    \cvID{Edilbert}{Christhuraj}{edil}{}
+  
+    
+    \begin{cvContact}
+      \cvContactAddress{Avenue de Morges 41\\1004 Lausanne\\Switzerland}
+      \cvContactEmail{mailto:bert.edil@gmail.com}{bert.edil@gmail.com}
+      \cvContactPhone{$+$49 176 77182454}
+     % \cvContactWebsite{https://doe.tld}{doe.tld}
+      \cvContactLinkedin{https://www.linkedin.com/in/edilbertchristhuraj}{Edilbert Christhuraj}
+      %\cvContactTwitter{https://twitter.com/johndoe}{@johndoe}
+      %\cvContactKeybase{https://keybase.io/johndoe}{\texttt{AAAA 5555 BBBB FFFF}}
+    \end{cvContact}
+    
+    \begin{cvLanguages}
+      \cvLanguage{Tamil (native)}{5}
+      \cvLanguage{English (professional)}{5}
+      \cvLanguage{German (B2)}{3}
+      \cvLanguage{French (A2)}{2}
+    \end{cvLanguages}
+    
+    
+    % \begin{cvInterests}[short]
+    %  \cvInterestsProfessional
+    %  \cvInterest{\faFilm}{film}
+    %  \cvInterest{\faCamera}{photography}  
+    %  \cvInterestsPersonal
+    %  %\cvInterest{\faTrain}{}
+    %  \cvInterest{\faGamepad}{gaming}
+    %  \cvInterest{\faSuitcase}{travelling} 
+    % \end{cvInterests}
+    
+    \begin{cvProfile}
+    	\begin{itemize}
+    		\item \emph{Silver medalist} for my academic achievement in Bachelor degree in Mechanical Engineering
+    		\vspace{0.5em}
+    		\item Recipient of "Indian Prime Minister Scholarship Scheme (PMSS)" from
+    		2011 to 2015 for my academic excellence.
+    	\end{itemize}
+    \end{cvProfile}
+    
+    \begin{cvProjects}
+    	\cvProject[image=limecv-icon,width=1cm,link=https://github.com/edilbert24]{\texttt{Github profile: edilbert24}}{All reports and source codes for the projects can be found in my Github profile.}
+    \end{cvProjects}
+    
+    
+  \end{cvSidebar}
+
+%Main content
+  \begin{cvMainContent}
+
+    \begin{cvEducation}
+    	\cvItem{\textbf{Visiting student, 05/2019--Present}\\
+    		\textsc{\'{E}cole polytechnique f\'{e}d\'{e}rale de Lausanne (EPFL), Switzerland}\\
+    	}
+      \cvItem{\textbf{Master of Science in Simulation Sciences, 10/2016--Present}\\
+      \textsc{RWTH Aachen University, Germany}\\
+      An interdisciplinary master program which on the one hand deals with basic methodological principles (e.g, numerical analysis) and, on the other hand with applications of computer simulations in science and engineering.}
+      \cvItem{\textbf{Bachelor of Engineering in Mechanical Engineering, 08/2011--05/2015}\\
+      \textsc{Anna University, India}\\
+    }
+    \end{cvEducation}
+    
+    \begin{cvExperience}
+      \cvItem{\textbf{Guest student program (Internship), 08/2018--10/2018}\\
+              \textsc{Juelich Supercomputing Center, Germany}\\
+             Scientific computing - Higher order Runga-Kutta methods - Template Meta
+             Programming in C++ - Multi--threaded Programming-OpenMP.};
+      \cvItem{\textbf{Student research assistant (Hiwi), 05/2017--06/2018}\\
+              \textsc{Chair of Fluid Mechanics and Institute of Aero-dynamics, RWTH} \\
+             I investigated fire characteristics and dynamics of air flow
+             inside tunnels. My activities ranged from carrying out experiments to writing simple programming scripts in C and LabView (Graphical program) to study the fluid dynamics.};
+      \cvItem{\textbf{Student research fellow (Internship), 05/2015--07/2015}\\
+              \textsc{Research Centre for Powder
+              	Metallurgy and Materials, India} \\
+            I studied the effect of change in efficiency in energy storage devices e.g., lithium--ion batteries, as a result of temperature change in electrolytes. And additionally I was involved in cathode production. };
+             
+              
+              
+               
+    \end{cvExperience}
+    
+    \begin{cvSkills}
+      \cvSkillTwo{5}{C}{4}{MPI Library (Univ. courses \& Project)}
+      \cvSkillTwo{3}{C++}{4}{OpenMP (Univ. courses \& Project)}
+      \cvSkillTwo{3}{MATLAB}{1}{CUDA (Workshop) }
+    %  \cvSkillTwo{2}{Python}{5}{\LaTeX}
+    \end{cvSkills}
+
+  \begin{cvExperience1}
+  	\cvItem{\textbf{Stochastic solution algorithm for Burgers and NS equations, Present-}\\
+  		\textsc{Master Thesis Advisor : Dr. Hossein Gorji, MCSS, EPFL}\\
+  	};
+  \cvItem{\textbf{Extrapolated Stabilized Explicit Runge-Kutta methods, October 2018}\\
+  		\textsc{Advisor : Dr. Andreas Kleefeld, JSC, Forschungszentrum Juelich}\\
+  		The soul aim of the project is to create a C++ template library for various
+  		higher orders of Runge-Kutta methods and to improve the performance of
+  		library.};
+  	\cvItem{\textbf{Flop count vs. Efficiency, January 2018}\\
+  		\textsc{Advisor : Prof. Paolo Bientinesi, High Performance Automatic Computing, RWTH}\\
+  		When one constructs an algorithm, one may tend to minimize the number of
+  		floating point operations of an algorithm with the intention of minimizing the
+  		execution time. The underlying assumption, which unfortunately does not hold
+  		in practice, is that all flops cost the same. In this project relation between flop
+  		count and efficiency was investigated using an example problem, matrix chain
+  		problem};
+  	\cvItem{\textbf{Magnetic domain-wall racetrack memory, May 2017}\\
+  		\textsc{Advisor : Prof. Martin Frank, Mathcces, RWTH} \\
+  		Magnetic domain walls are formed at the boundaries between magnetic domains
+  		magnetized in opposite directions along a so-called racetrack.
+  		The racetrack is a ferromagnetic nano--wire, with data encoded as a pattern
+  		of magnetic domains along a portion of the wire. Using pulses of highly spin-
+  		polarized current to move the entire pattern of domain walls coherently along
+  		the length of the wire past read and write elements is a possible technology for
+  		future computer memory. In this project numerical tools to study the structure
+  		of domain walls were developed.};
+  \end{cvExperience1}
+
+%    \begin{cvReferences}
+ %     \cvAddReference{%
+  %      name=Jane Smith,
+   %     company=Company ABC Co.\ Ltd.,
+   %     position=Job title,
+    %    address line 1=Street lane 2,
+     %   address line 2=B-1150 Brussels,
+     %   mobile phone=+1 781 555 1212}%
+    %\end{cvReferences}
+  
+  \end{cvMainContent}
+  
+  \clearpage
+  
+\begin{comment}
+ \begin{cvCoverLetter}
+ 
+ \cvBeneficiary{%
+ name=Patrick Jenny,
+ position=Department of Mechanical and Process Engineering,
+ company= Institute of Fluid Dynamics,
+  address line 1=ETH Zuerich}
+
+ Dear Prof.\ Patrick Jenny,
+ %\vspace{\baselineskip}
+ 
+ %\lipsum[1-3]
+ I write this letter with the intent of applying for a Ph.D position in your research group.  In this letter I would like to briefly state my intention. For that I start with a short introduction about me. I have begun my academic career as an undergraduate student in mechanical engineering, in Anna university, in India. After obtaining my bachelor degree in 2015, I have joined RWTH Aachen university, in Germany, in 2016, as a master degree student in simulation sciences. Currently I am visiting the research group "Computational Mathematics and Simulation Sciences" at EPFL, in Switzerland, as a visiting student. And I am carrying out my master thesis there, titled \textit{stochastic solution algorithms for Burgers and Navier-Stokes equation}, under the guidance of Dr. Hossein Gorji.
+ 
+ For the past three years, throughout my master degree, I have been involving in learning about solving complex problems that arise in natural sciences and in engineering using computer simulations. For that I have studied numerous courses in relation to applied mathematics (e.g, solving PEDs numerically), computer science (e.g, writing error free efficient parallel programs), and applied sciences (e.g, biological and fluid mechanics) to enrich my theoretical knowledge. And I have demonstrated my practical skills through a handful of projects. Currently I am studying stochastic simulations of Burgers and Navier-Stokes equations in my master thesis. I am developing stochastic algorithms for solving those equations.  Soon I will, in October 2019, graduate with a master degree in simulation sciences. 
+ 
+ As I enjoy solving problems and acquiring knowledge, I would like to continue with further studies. Therefore I am looking for a Ph.D position, in broad terms, in the area of computational sciences. I have come to know your research group through my supervisor Hossein Gorji. I have taken a particular interest in your research work. Given my educational background I believe that I will be a suitable candidate. Hence, I kindly ask you to consider my request for a position in your group and to offer me a meeting for discussion.   
+ 
+ Together with this letter I enclosed a short curriculum vitae, which best summarizes my academic activities for the past few years, and a summary of my master courses, which I believe would be of help in gauging my academic background.     
+ 
+  I am  awaiting in earnest to have a discussion with you soon.
+ \vspace{0.5em}
+ 
+% \vspace{1em}
+ \cvFullName \\
+ %\href{bert.edil@gmail.com}
+ \href{mailto:bert.edil@gmail.com}{bert.edil@gmail.com} 
+\end{cvCoverLetter}
+\end{comment} 
+  
+  \end{document}
